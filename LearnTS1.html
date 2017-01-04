@@ -1,0 +1,80 @@
+
+<!--install system.js here systemjs/dist/system.js-->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="CONEPTS" value="Class, Extends, Inheritance, Extends, Interface, Abstract, TypeScript - Sugarcoating language, Transpiler - Work from one language to another. TS is not a compiler, Closures, IIFEs, NPM,TypeScript Visual Studio 2015">
+    <title>Learning TypeScript</title>
+    <!--<script>
+
+    //There can be no replacement for JS . You need to understand and know JS before TS
+    //Creating a Class in JS
+    	/*function Customer(){
+    		//Properties
+    		this.CustomerName = "" ;
+    		this.CustomerCode = "";
+
+    		//Methods
+    		this.validate = function(){
+    			alert("Validate");
+    		}
+    	}*/
+    </script>-->
+
+    <!--Using modules requires "on-demand" loading (Load now) - asynchronously. Using MODULE loaders: (3rd party) require.js, webpack,system.js,common.js: Do npm i system.js or others. trying to instantiate the modules with the keyword "new" here won't work! -->
+
+    <!--<script type="text/javascript" src="Customer.js"></script>-->
+     <script  src="systemjs/dist/system.js"></script>
+
+  </head>
+  <body>
+
+    <script>
+    	System.config({
+    		"defaultJSExtension":true//converts "./Address" to Address.js
+
+    	//we import Customer.js and then create an object (instance) out of it
+    	system.import("Customer.js").then(
+    		function(exports){
+    			//creates an instance of the address object.
+    			//which is part of the exports imported into the Customer object.
+    			var cust = new exports.Customer();
+    		})
+    	});
+
+    </script>
+	<!--<script>
+		var cust = new Customer();
+		//cust.CustomerName = "Shiv";
+		//alert(cust.CustomerName);
+		//cust.Validate(123);
+		cust.Validate();
+		cust = new SomeOtherCustomer();
+		cust.Validate();
+
+		//cust.CustomerName = "Test";
+		//cust.CustomerName = "";
+		//alert (cust.CustomerName);
+
+
+		//Managing exceptions
+		try {
+			//cust.CustomerName = "";
+			cust.CustomerName = "sdf";
+			cust.addressobj.Street1 = "1234"
+
+			//alert (cust.CustomerName);
+
+			alert (cust.addressobj.Street1);
+		}
+
+		catch(ex){
+			alert(ex);
+		}
+		
+
+	</script>-->
+  </body>
+</html>
+

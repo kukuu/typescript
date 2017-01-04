@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <title>TypeScript : Author - Alexander Adu-Sarkodie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  type="text/javascript" src="typescript.js"></script>
+	 <!--<script  type="text/typescript" src="interface.js"></script>-->
+	<script  type="text/typescript">
+      interface Person {
+        firstName: string;
+        lastName: string;
+      }
+
+    function greeter(person: Person) {
+        return "Hello, " + person.firstName + " " + person.lastName;
+    }
+
+    var user1 = { firstName: "Jane", lastName: "User" };
+    var user2 = { firstName: "Michael", lastName: "Jones" };
+
+    //document.body.innerHTML = greeter(user);
+
+    var result = document.getElementById("data1");
+    result.innerHTML = greeter(user1);
+
+    var result2 = document.getElementById("data2");
+    result2.innerHTML = greeter(user2);
+
+  </script>
+  </head>
+  <body>
+  	<p id="data1"></p>
+    <p id="data2"></p>
+
+  </body>
+</html>
