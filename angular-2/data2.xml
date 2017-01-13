@@ -1,0 +1,27 @@
+<?xml version= "1.0"?>
+<?xml-stylesheet type="text/xsl" href="data2.xsl"?>
+    <data>
+        <points> 
+            <title>C-3P0</title>
+            <point>2983</point>
+            <url>1.png</url>
+        </points>
+
+        <points>
+            <title>Darth Vadar</title>
+            <point>2676</point>
+            <url>3.png</url>
+        </points>
+
+        <points>
+            <title>BB-8</title>
+            <point>1292</point>
+            <url>5.jpeg</url>
+        </points>
+
+        <points>
+            <title>Boba Fett</title>
+            <point>872</point>
+            <url>5.jpeg</url>
+        </points>
+    </data>

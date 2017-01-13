@@ -1,4 +1,5 @@
 
+<!--Author: Alexander Adu-Sarkodie-->
 <!-- <h2>My playlist will eventually end up here</h2> -->
 <table class="table table-hover">
 	<thead>
@@ -6,21 +7,25 @@
 			<th>ID</th>
 			<th>Title</th>
 			<th>Description</th>
+			<th>Video Code</th>
+			<th>Video</th>
 		</tr>
 	</thead>
 	<tbody>
-	<!-- list of videos from "inputs = [videos]" (from playlist.components.ts) in a loop directive *ngFor-->
+	<!-- list of videos from "inputs = [videos]" (from playlist.components.ts) in a loop directive (structural) *ngFor-->
 		<tr *ngFor="#v of videos" (click)="onSelect(v)">
 			<td>{{v.id}}</td>
 			<td>{{v.title}}</td>
 			<td>{{v.desc}}</td>	
+			<td>{{v.videoCode}}</td>
+			<td><img [src]="v.fullPath" /></td>
 		</tr>
 	</tbody>
 </table>
 
 <hr />
 
-<h2>{{ saleHeading }}</h2>
+<h2>{{ saleHeading }} <small>click item to update!</small></h2>
 
 <ul>
 	<li *ngFor="#shoppingListItem of shoppingListItems" (click)="onItemClicked(shoppingListItem)">{{ shoppingListItem.name }}	
@@ -31,7 +36,12 @@
 <input type="text" style="border: 1px solid grey" #shoppingListItem />
 <button (click)="onAddItem(shoppingListItem)">Add Item</button>
 
-<!--Bar Chat-->
+
+<!--To Do::
+1. Live Text Char Module
+3. Dynamic  d3/HighChaart Bar Chat visualisation based on analytics of cluster messaging from 1.
+3. Voice messaging
+-->
 
 
 

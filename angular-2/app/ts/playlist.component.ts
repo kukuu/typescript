@@ -24,9 +24,10 @@ export class PlaylistComponent {
 	}
 
 	public shoppingListItems = [
-		{name: "From Moscow with Love"},
-		{name: "The Hunt for Red October"},
-		{name: "Golden Eye"}
+		{name: "C-3PO"},
+		{name: "Darth Vadar"},
+		{name: "BB-8"},
+		{name: "Boba Fett"}
 	];
 
 	public selectedItem = { name: "" };
@@ -47,9 +48,6 @@ export class PlaylistComponent {
 
 	  
 }
-
-
-
 
 //This component will have to be imported into the main component
 //of the application.

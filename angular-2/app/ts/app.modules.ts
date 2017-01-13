@@ -1,3 +1,5 @@
+//Author: Alexander Adu-Sarkodie
+
 import { BrowserModule } from 'angular/platform-browser';
 import { NgModule } from 'angular/core';
 import { FormModule } from 'angular/forms';

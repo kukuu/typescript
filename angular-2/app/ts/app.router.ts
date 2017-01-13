@@ -1,3 +1,5 @@
+//Author: Alexander Adu-Sarkodie
+
 import { ModuleWithProviders } from 'angular/core';
 import { ModuleWithProviRoutes, RouterModule } from 'angular/router';
 

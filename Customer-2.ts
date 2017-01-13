@@ -1,3 +1,5 @@
+
+//Author - Alexander Adu-Sarkodie
 import  {Address} from "./Address";
 
 export class Customer {

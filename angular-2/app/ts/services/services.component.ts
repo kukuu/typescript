@@ -1,3 +1,5 @@
+//Author: Alexander Adu-Sarkodie
+
 import {Component} from 'angular2/core';
 
 
@@ -5,7 +7,6 @@ import {Component} from 'angular2/core';
     selector: 'services',
 
     templateUrl: 'app/ts/services/services.component.html',
-
 })
 
 

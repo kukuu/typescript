@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="task2.xsl" ?>
+<data>
+  <points>
+    <name>Heroes and Villains</name>
+    <url>/profiles/c3p-0</url>
+    <point>2983</point>
+  </points>
+
+  <points>
+    <name>Heroes and Villains</name>
+    <url>/profiles/darth-vadar</url>
+    <point>2676</point>
+  </points>
+
+  <points>
+    <name>Heroes and Villains</name>
+    <url>/profiles/bb-8</url>
+    <point>1292</point>
+  </points>
+
+  <points>
+    <name>Heroes and Villains</name>
+    <url>/profiles/boba-fett</url>
+    <point>872</point>
+  </points>
+</data>

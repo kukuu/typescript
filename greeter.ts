@@ -3,14 +3,14 @@
 }
 
 var user = "Jane User";
-ß
+
 document.body.innerHTML = greeter(user); */
 
 //Add a : string type annotation to the ‘person’ function argument as shown here:
 
 function greeter(person: string) {
 	    	return ("Hello, " + person);
-		}
+}
 
 		var user = "Jane User";
 

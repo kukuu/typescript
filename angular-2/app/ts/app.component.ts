@@ -1,3 +1,5 @@
+//Author: Alexander Adu-Sarkodie
+
 import {Component} from 'angular2/core';
 import {Config} from './config.service';
 import {Video} from './video';
@@ -21,7 +23,7 @@ export class AppComponent {
 	saleHeading = Config.SALE_HEADING
 
 	//include the video list. Give it a name (videos here), 
-	//and the type is the name of the class Video
+	//and the type is the name of the class Video. The name is passed as value to the array attribute in app.component.html
 
 	videos: Array<Video>;
 
@@ -31,9 +33,15 @@ export class AppComponent {
 
 	constructor(){
 		this.videos = [
-			new Video(1, "Beauty and The Beast", "qgGIqRFvFFk", "How to Spice up"),
-			new Video(2, "Dirty Dancing", "qgGIqRFvFFk", "Temptations with a happy ending")
+			new Video(1, "C-3PO", "qgGIqRFvFFk", "Heroes and Villains","one"),
+			new Video(2, "Darth Vadar", "qgGIqRFvFPP", "THeroes and Villains","two"),
+			new Video(3, "BB-8", "qgGIqRFvFZZ", "Heroes and Villains","three.gif"),
+			new Video(4, "Boba Fett", "qgGIqRFvFUU", "Heroes and Villains","four"),
 		]
 
 	}
 }
+
+
+
+

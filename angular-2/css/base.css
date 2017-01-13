@@ -1,0 +1,117 @@
+/*Author Alexander Sarkodie
+File name: base.css;
+Purpose: This document is annotated with comments for the purpose that is intended;
+Date: January 2017;
+*/
+
+/*
+This is the parent container
+*/
+    .content {
+        margin-top: 10px;
+    }
+
+/*  This class is the container for our menu.
+    It defines attributes for everything inside. */
+    .tabbed-menu {
+        font-family: "Helvetica";
+        font-size: 15px;
+        width: 600px;
+    }
+
+    /* Enforce specificity to  display  h2 as block element */
+    h2 {
+        display: block;
+    }
+
+    /* styling svg container*/
+    svg {
+        float: left;
+    }
+
+    /*  This class defines how your menu options
+        will be arranged and also gives us a nice 
+        dividing line between the menu and the content. */
+    .tabs {
+        text-align: center;
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        line-height: 26px;
+        color: #0088CC;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    /*  This defines the look of the individual tabs of 
+        your menu when they are contained in a tabs class.
+        Note the space between the two class selectors. */
+    .tabs .tab {
+        margin-bottom: -1px;
+        padding: 3px 10px 0 10px;
+        border: 1px solid #DDDDDD;
+        background: #EFEFEF;
+
+    /*  inline-block tells the browser to arrange the list
+        elements in a line rather than each element on its
+        own line. */
+        display: inline-block;
+
+    /*  The attributes here round the top left
+        and right corners of the tabs. */
+        border-top-left-radius: 6px; 
+        border-top-right-radius: 6px;
+    }
+    /*  This defines what a tab should look like when selected 
+        Note the lack of space between .tab and .selected */
+    .tabs .tab.selected {
+        background: #FFF;
+        border-bottom-color: transparent;
+    }
+    /*  This defines how a tab looks when your mouse hovers above it */
+    .tabs .tab:hover {
+        color: #333333;
+        cursor: pointer;
+        background: #FFFFFF;
+    }
+
+    /*  This centers all of the text within a page element
+        and makes all pages default to a non-visible state */
+    .page {
+        display: none;
+    }   
+    /*  This makes the selected .page become visible */
+    .page.selected {
+        display: block; 
+    }
+    /*  This overrides the text centering we defined above if
+        the text is within a list and also tells your browser
+        not to put bullet points next to the text. */
+    .page li {
+        text-align: left;
+        list-style-type: none;
+    }
+
+/*
+Media Queries for desktop, tablet and mobile
+*/
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+
+ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+
+ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+}
