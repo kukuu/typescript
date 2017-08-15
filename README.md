@@ -113,7 +113,7 @@ class Customer {
     }
 }
 
-``
+```
 
 The above code creates a class named Customer using the class keyword of TypeScript. Just like C# classes a TypeScript class can have properties, methods and constructors. Once created you can initialize an object of Customer class as shown below:
 
@@ -236,7 +236,7 @@ constructor(custId:number,company:string,country:string) {
     this.country = country;
 }
 
-``
+```
 
 The above code declares a parameterized constructor for the Customer class. The constructor has three parameters and inside the constructor their values are assigned to the respective properties. Once created you can instantiate the Customer class as shown below:
 
