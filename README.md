@@ -192,7 +192,6 @@ class Customer {
 
 The above code declares a class named Customer. The Customer class declares a static property - data - of type string. The static function test() then displays this property value to the user. Notice how static members are accessed using <class_name>.<static_member_name> syntax.
 
-```
 
 
 6. Function Overloading
