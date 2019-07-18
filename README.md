@@ -394,3 +394,13 @@ let greeter = new Greeter("world");
 console.log(greeter.greet());//call object on method
 ```
 
+12. Modules in typescript are loaded on demand. This enhances efficiency. Module loaders are hence required i.e SystemJS,RequireJS, Webpck, CommonJS - This is on-demand loading.
+
+Some Typecsript features
+
+- Classes
+- Properties
+- Methods
+- Implementing Inheritance and Interfaces
+- Import and Export
+- Loading modules using module loader (System loading - On Demand Loading)
