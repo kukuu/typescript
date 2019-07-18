@@ -319,3 +319,78 @@ var obj = new Company.Customer();
 ```
 
 The above code defines Company module using the module keyword. The Company module contains three classes - Employee, EmployeeHelper and Customer. By default all the classes from a module are accessible only within that module. That is why it is alright to access the Employee class inside the EmployeeHelper class from the same module but you can't access the Employee class from outside the Company module. If you wish to access a class from a module from the outside world you need to "export" it as in the case of the Customer class.
+
+11. Running script:
+
+
+
+i. First you need to install typescript
+
+```
+npm install -g typescript
+
+```
+
+ii. Create one file helloword.ts
+
+```
+function hello(person){
+ return "Hello, " + person;
+}
+
+let user = "Kwasi Brown";
+
+const result = hello(user);
+console.log("Result",result)
+
+```
+iii. Open command prompt and type the following command
+
+```
+tsc helloward.ts
+
+```
+
+Again run the command
+
+```
+node helloward.js
+
+```
+
+iv. Result will display on console
+
+v. If you want to use one command line to compile and run your code, you can use the following:
+
+```
+
+Windows:
+
+tsc main.ts | node main.js
+```
+
+```
+Linux / macOS:
+
+tsc main.ts && node main.js
+
+```
+
+
+
+```
+class Greeter {
+  greeting : string;
+  constructor(message : string) {
+    this.greeting = message;
+  }
+
+  greet() {
+    return "Hello, " + this.greeting;
+  }
+}
+//Instantiate class => object
+let greeter = new Greeter("world");
+console.log(greeter.greet());//call object on method
+```
+
