@@ -62,8 +62,6 @@ Declare variables
 As you can see three variables age, message and flag are declared of type number, string and bool respectively. If you try to assign values to any of these variables that are not of the specific type, the TypeScript compiler will throw an error. If you are using TypeScript editor plugin for Visual Studio 2012 you will immediately see a red underline below the line in question. You can omit the type if you declare and initialize the variable in a single step (for example, var age=10; will make age of type number). Types can also be used with function parameters or return values of the functions.
 
 
-image 1
-
 
 ```
 
@@ -129,9 +127,6 @@ obj.addCustomer();
 4. Access Modifiers and Properties
 
 Access modifiers control the accessibility of the members of a class. TypeScript has two access modifiers - public and private. By default the members are public but you can explicitly add a public or private modifier to them. Consider the following piece of code that declares two public and one private variable.
-
-image 2
-
 
 
 Two public and one private variable
@@ -218,7 +213,6 @@ addCustomer(value: any) {
 As you can see the first two are merely function signatures without any implementation. The first signature has one parameter of type number whereas the second signature has a parameter of type string. The third function contains the actual implementation and has a parameter of type any. The any data type indicates that any type of data can be passed in the parameter. The implementation then has a series of if blocks, each checking the type of the supplied parameter. Accordingly a different piece of code is executed. If you see the IntelliSense for the addCustomer() function it will indicate all the overloaded versions of the function as shown below:
 
 
-image 3
 
 The IntelliSense for the addCustomer() function above.
 
@@ -262,8 +256,6 @@ The above constructor has three parameters and they are marked as public. This w
 8. Inheritance
 
 TypeScript allows you to inherit from existing classes. By inheriting classes you can extend their functionality as per your requirement. For example, you may have a class named Person. You can create specialized classes based on the Person class by extending it in the other classes (say Employee or Contractor). The following code shows how this can be done.
-
-image 4
 
 
 TypeScript allows you to inherit from existing classes
